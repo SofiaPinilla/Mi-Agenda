@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <!--<script src="https://kit.fontawesome.com/f13287954d.js" crossorigin="anonymous"></script>-->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open"></i>
+            Mi<span class="text-primary">Agenda</span></h1 class="display-4">
+        <div class="card">
+            <div class="card-body">
+                    <div class="form-group">
+                        <label for="title">Tarea</label>
+                        <input type="text" id="title" placeholder="Añadir tarea" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descripción</label>
+                        <textarea type="text" id="description" placeholder="Añadir descripción"
+                            class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="hour">Hora</label>
+                        <input type="time" id="hour" placeholder="Añadir hora" class="form-control">
+                    </div>
+                    <button id="saveButton" class="btn bnt-primary btn-block">Añadir</button>   
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div id="tareas"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

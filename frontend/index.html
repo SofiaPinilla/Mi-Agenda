@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <!--<script src="https://kit.fontawesome.com/f13287954d.js" crossorigin="anonymous"></script>-->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.js" async defer></script>
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open"></i>
+            Mi<span class="text-primary">Agenda</span></h1 class="display-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="title">Tarea</label>
+                    <input type="text" id="title" placeholder="Añadir tarea" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea type="text" id="description" placeholder="Añadir descripción"
+                        class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="hour">Hora Inicial</label>
+                    <input type="time" id="hour1" placeholder="Añadir hora" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="hour">Hora Final</label>
+                    <input type="time" id="hour2" placeholder="Añadir hora" class="form-control">
+                </div>
+                <button id="saveButton" class="btn bnt-primary btn-block">Añadir</button>
+            </div>
+        </div>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr class="tablas">
+                    <th>Tarea</th>
+                    <th>Descripción</th>
+                    <th>Hora</th>
+                    <th>Hora</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tarea-list"></tbody>
+        </table>
+    </div>
+
+    <div class="col px-5">
+        <div id="tareas"></div>
+
+    </div>
+    </div>
+
+
+
+
+    <script src="app.js" async></script>
+</body>
+
+</html>

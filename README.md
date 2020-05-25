@@ -11,7 +11,7 @@ MongoDB en el backend.
 
 #### Preview
 
-![foto](agenda.gif) 
+![foto](miagenda.gif) 
 
 
 
